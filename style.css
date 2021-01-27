@@ -1,0 +1,108 @@
+body {
+  background-color: beige;
+}
+
+header {
+  background-image: url(/HK.jpeg);
+  border-radius: 20%;
+}
+
+.for-padding {
+  padding: 10px;
+}
+
+header h1 {
+  font-family: "Arial";
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Comic Sans MS";
+  border: navy solid 3px;
+  display: inline-block;
+  padding: 10px;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.broad {
+  display: flex;
+  flex-direction: column;
+}
+
+.entity {
+  flex: 1;
+}
+
+.entity-double {
+  flex: 2;
+}
+
+img {
+  margin: 25px 0px;
+  width: 100%;
+}
+
+.just-links {
+  display: flex;
+}
+
+.entity-link {
+  margin: 0px 150px 10px 0px;
+  flex-direction: row;
+}
+
+.entity-link:link { color:navy; }
+.entity-link:visited { color:purple; }
+.entity-link:hover { color:darkred; }
+.entity-link:active { color: peru; }
+
+@media all and (min-width: 800px) {
+
+  .broad {
+    flex-direction: row;
+  }
+
+   .links-container {
+    display: inline-block; 
+    margin-right: auto;
+    margin-left: 125px;
+    
+  } 
+
+  .just-links {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid orange;
+    padding: none;
+  }
+
+  .entity-link {
+    margin: 25px 10px;
+    text-align: center;
+  }
+
+  .center {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  section {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 50px;
+  }
+
+  .left-align {
+    float: left;
+  }
+
+}
