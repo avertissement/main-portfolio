@@ -1,18 +1,23 @@
 body {
-  background-color: beige;
+  background-image: url("Gray.jpeg");
 }
 
 header {
   background-image: url(/HK.jpeg);
   border-radius: 20%;
+  background-position: center;
 }
 
-.for-padding {
+ .for-padding {
   padding: 10px;
-}
+ }
 
 header h1 {
   font-family: "Arial";
+  text-align: center;
+}
+
+.individual {
   text-align: center;
 }
 
@@ -21,6 +26,7 @@ header h1 {
   border: navy solid 3px;
   display: inline-block;
   padding: 10px;
+  background-color: lightblue;
 }
 
 section {
@@ -34,10 +40,6 @@ section {
   flex-direction: column;
 }
 
-.entity {
-  flex: 1;
-}
-
 .entity-double {
   flex: 2;
 }
@@ -47,43 +49,79 @@ img {
   width: 100%;
 }
 
-.just-links {
-  display: flex;
-}
-
-.entity-link {
-  margin: 0px 150px 10px 0px;
-  flex-direction: row;
-}
-
 .entity-link:link { color:navy; }
 .entity-link:visited { color:purple; }
 .entity-link:hover { color:darkred; }
 .entity-link:active { color: peru; }
 
+.just-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+form {
+  align-items: center;
+  background-color: gray;
+  padding: 15px;
+}
+
+.item {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.extra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.massage {
+  margin-right: 5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav li {
+  list-style-type: none;
+  border: 2px solid #fff;
+  background-color: lightgray;
+  border-radius: 15%;
+  padding: 5px;
+}
+
+a:link { color:blue; }
+a:visited { color:purple; }
+a:hover { color:greenyellow; }
+a:active { color: green; }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-left: 38px;
+}
+
 @media all and (min-width: 800px) {
+
+  header .for-padding .header-item1 h1 {
+    margin-right: 10px;
+    color: #F7B32B;
+  }
+
+  .day {
+    background-color: #A9E5BB;
+    border-radius: 15%;
+    border: 2px solid #FCF6B1;
+  }
 
   .broad {
     flex-direction: row;
-  }
-
-   .links-container {
-    display: inline-block; 
-    margin-right: auto;
-    margin-left: 125px;
-    
-  } 
-
-  .just-links {
-    display: flex;
-    flex-direction: column;
-    border: 1.5px solid orange;
-    padding: none;
-  }
-
-  .entity-link {
-    margin: 25px 10px;
-    text-align: center;
   }
 
   .center {
@@ -101,8 +139,33 @@ img {
     margin: 50px;
   }
 
-  .left-align {
-    float: left;
+  .two {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
   }
 
+  .links, form {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .for-padding {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  } 
+
+  .header-item1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-item2 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
