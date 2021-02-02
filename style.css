@@ -1,9 +1,9 @@
 body {
-  background-image: url("Gray.jpeg");
+  background-image: url("images/Gray.jpeg");
 }
 
 header {
-  background-image: url(/HK.jpeg);
+  background-image: url("images/HK.jpeg");
   border-radius: 20%;
   background-position: center;
 }
